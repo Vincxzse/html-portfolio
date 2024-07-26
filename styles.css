@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgb(42, 66, 138);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 5px 1px black;
+    z-index: 1000;
+}
+
+#logo {
+    pointer-events: none;
+    color: whitesmoke;
+    font-family: cursive;
+}
+
+#navbar {
+    justify-content: space-between;
+}
+
+.navigator {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+    color: whitesmoke;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    #projects {
+        padding: 6rem 1rem
+    }
+}
+
+.last-nav {
+    margin: 0 50px 0 0;
+}
+
+.navigator:hover {
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0 0 5px 2px white;
+    color: #45567d;
+}
+
+.navigator::selection {
+    color: orange;
+}
+
+#welcome-section {
+    justify-content: center;
+    padding: 350px;
+    text-align: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    color: white;
+}
+
+h1 > span {
+    color: rgb(102, 102, 225)
+}
+
+.intro-part {
+    color: skyblue;
+    font-size: 1.6em;
+    padding-top: 20px;
+    font-weight: 100;
+}
+
+#projects {
+    background-color: #45567d;
+    padding: 10rem 2rem;
+    text-align: center;
+}
+
+.project-section-header {
+    text-align: center;
+    color: white;
+    font-size: 2.6em;
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    pointer-events: none;
+}
+
+.divider {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.project-tile {
+    cursor: pointer;
+    background-color: #3a3d40;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.project-tile:hover {
+    transition: 0.2s;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 1px white;
+    background-color: rgb(204, 76, 117);
+}
+
+.project-title {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+}
+
+.project-image {
+    height: calc(100% - 3.8rem);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#contacts {
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+    background-color: #3a3d40;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact-section-header {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-section-header > h2 {
+    font-size: 2.9em;
+    font-weight: 900;
+}
+
+.contact-section-header > p {
+    font-style: italic;
+}
+
+.contact-links {
+    text-align: center;
+    padding: 3rem 2rem;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: rgb(241, 150, 150);
+    transform: translateY(10px);
+}
+
+footer {
+    padding: 3rem 2rem;
+    border-top: 5px solid rgb(42, 66, 138);
+    background-color: #3a3d40;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
